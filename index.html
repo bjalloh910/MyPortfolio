@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Website Portfolio</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/e6551da897.js" crossorigin="anonymous"></script> <!--to be able to add the icons-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Ensures my website is responsive and adapts to different screen sizes-->
+    </head>
+    <body>
+
+
+        <section id="introduction">
+            <div class="container">
+                <nav><!-- Logo and Navigation Menu -->
+                    <h1 class="logo">Bintu's website portfolio</h1>
+                    <ul id="sidemenu"> <!-- class for the main header links that are going to be shown-->
+                         <li><a href="#introduction">Home</a></li> 
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#projects">Projects</a></li>
+                         <li><a href="#contact">Resume</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                         <button id="light-mode-toggle" class="light-mode-toggle" aria-label="toggle-light-mode">Mode</button>
+                         <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!--menu icon-->
+                </nav>
+            </div>
+        </section>
+    
+
+    <!-- The main section containing information about intro info about me -->
+        <main class="section2"> <!-- Container for the header text -->
+            <div class="header-text">
+                <h1>Hi, I'm <span>Bintu Jalloh</span> <br> a <span>Software Engineer</span> from <span>Austin, Texas</span></h1> <!-- br adds a line break -->
+            </div>
+            <div class="picture"> <!-- Container for the individual's picture -->
+                <img src="pic_folder/Prof-Pic.JPG" class="responsive-image"> 
+            </div>
+        </main> 
+      
+     
+    <!--About section-->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-column-1">
+                        <img src="pic_folder/Prof-Pic2.JPG" alt="Profile Image">
+                    </div>
+                    <div class="about-column-2">
+                        <h1 class="main-title">About Me</h1>
+                        <p>Welcome to my portfolio! I am Bintu Jalloh, a passionate and driven Software Engineer. My passion lies in bringing concepts to life on the digital canvas of the internet. My interest in web development started in fall of 2023 when I was creating an image to match my slice eater game that I created the backend for using the language Python. This experience fueled my ambition to discover more about software Engineering. As a result, I decided to combine my frontend and backend skills to create ever-more complex and creative concepts.This portfolio is a website illustrating my journey, showcasing a diverse range of projects and accomplishments. 
+                        </p>
+                        <div class="tab-contents active-tab">  <!-- Skills Section -->
+                            <h2 class="skill-title"> Skills</h2>
+                            <hr>
+                            <ul class="skill-content">
+                                <ul>
+                                    <h4>Front End:</h4>
+                                    <ul class="sub-list">
+                                        <li>HTML5</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>WebDevelopment</li>
+                                    </ul>
+                                </ul>
+                                <ul>
+                                    <h4>Languages:</h4>
+                                    <ul class="sub-list">
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                    </ul>
+                                </ul>
+                                <ul>
+                                    <h4>Developer tools:</h4>
+                                    <ul class="sub-list">
+                                        <li>Git</li>
+                                        <li>GitHub</li>
+                                        <li>Slack</li>
+                                        <li>Figma</li>
+                                        <li>VSCode</li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    <!--Projects-->
+        <section id="projects">
+            <div class="container">
+                <h1 class="main-title">My Projects</h1>
+                <div class="projects-list">
+                    <div>
+                        <i class="fa-solid fa-gamepad"></i> 
+                        <i class="fa-brands fa-java"></i>
+                        <h2>Golden Crown Adventure Game</h2>
+                        <p>
+                            The golden crown is a text-adventure game. The framework's basis is based on the graceful adoption of the three object-oriented programming principles—polymorphism, encapsulation, and inheritance which allows a flexible and powerful codebase. Leveraged Java's interfaces and abstract classes to create a flexible and scalable combat framework, accommodating diverse enemy types and character abilities.
+                        </p>
+                        <a href="https://github.com/bjalloh910/Adventure-Game-CSC120-finalproject">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i> 
+                        <h2>DormFryer Meals</h2>
+                        <p>
+                            Implemented user-friendly website with a dorm air fryer recipe database using HTML and CSS, offering diverse possibilities through simple ingredients and methods., images. Ensured structured content using classes and conceptual HTML elements, with a responsive design achieved through a flex-box navigation layout for various screen sizes. Gained a significant user base, with many college students not only finding valuable options but also actively engaging with and enjoying the provided recipes.
+                        </p>
+                        <a href="https://github.com/bjalloh910/DormRecipes">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-python"></i>  
+                        <h2>Slice Eater</h2>
+                        <p>
+                            Developed "Slice Eater," a captivating word-guessing game with three distinct difficulty levels. The game's appeal lies in its utilization of a comprehensive word database, leveraging a Python library to ensure an extensive vocabulary. Programmed a dynamic pizza visualization with disappearing slices for a thrilling gameplay experience. Integrated a unique hint system designed to provide players with assistance when guessing the word becomes challenging. Attracted over 50 users who enjoyed the game resulting in an average playtime of 6 minutes per session and a remarkable 80% user retention rate.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-brain"></i>
+                        <h2>Quote.gpt</h2>
+                        <p>
+                            Developed a website known as “quote.gpt” with a simple user interface. Integrated the ChatGPT API, html, css, and javascript to enable users to input their emotions. Generated personalized, uplifting affirmation quotes in real-time upon users entering their feelings in the input box. Provided 100s of users immediate emotional support and encouragement. 
+                        </p>
+                        <a href="https://github.com/bjalloh910/Quote.gpt">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-js"></i>
+                        <h2>JavaScript Calculator</h2>
+                        <p>
+                            Designed and developed a fully functional calculator. Utilized HTML and CSS for a clean UI. Implemented JavaScript logic for accurate arithmetic operations. The project climaxed as I launched the calculator into the hands of users. Their feedback and usability testing revealed an astounding 98% satisfaction rate, turning my creation into a user-friendly masterpiece.
+                        </p>
+                        <a href="https://github.com/bjalloh910/JavaScript-Calculator">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    <!--Contact Section-->
+        <section id="contact">
+            <div class="container">
+                <div class=row> <!--need to make 2 columns for this section. First will be contact information. right will be contact form-->   
+                    <div class="contact-left">
+                        <h1 class="main-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>bintuj522@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>347-751-2505</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/bintu-jalloh"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/bjalloh910"><i class="fa-brands fa-github"></i>
+                        </div> 
+                        <a href="p_images/three.JPG"><button download class="btn">Download Resume</button></a> <!--DONT FORGET TO ADD RESUMW-->
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">                                        <!--Creating a form -->
+                            <input type="text" name="name" placeholder="your name" required>        <!--input field for name-->
+                            <input type="email" name="email" placeholder="email" required>          <!--input field for email-->
+                            <textarea name="message" row="6" placeholder="your Message"></textarea> 
+                            <button type="submit" class="btn">Submit</button>
+                        </form> 
+                    </div>
+                </div> 
+            </div>
+        </section>
+    
+        <script>
+            let sidemenu = document.getElementById("sidemenu");         // Get the DOM element with the ID "sidemenu"
+            function openmenu(){                                       // Function to open the side menu
+                sidemenu.style.right = "0";                           // Set the "right" CSS property of sidemenu to "0", making it visible
+            }
+            function closemenu(){                                    // Function to close the side menu
+                sidemenu.style.right = "-200px";                    // Set the right property of the sidemenu to -200px, hiding it off the screen
+            }
+        </script>
+    
+        <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzyBC8mDD--kdzLmUmEaf5fasmfGRVW8jLUOrWQpvEMTgvBDNygjCRT9xBwioANzjX1/exec' // URL to the Google Apps Script endpoint
+        const form = document.forms['submit-to-google-sheet'] // Get the HTML form element with the name 'submit-to-google-sheet'
+    
+        form.addEventListener('submit', e => {                              // Add a submit event listener to the form
+            e.preventDefault();                                            // Prevent the default form submission behavior
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)}) // Perform a POST request to the scriptURL with the form data
+            .then(response => console.log('Success!', response))         // Log success response
+            .catch(error => console.error('Error!', error.message))     // Log error message if fetch fails
+        });
+        </script>
+    
+        <script src="script.js"></script> <!--Linking the JS file to the html-->
+        </body>
+    </html>
+ </body>
